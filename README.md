@@ -11,6 +11,10 @@ I creted this little class for GET/ADD/UPDADE/DELETE procedures using the new AP
 
 You can check the example script: php_rest_api_examples.php for more details
 
+As Mikrotik HELP page explains - REST API is available Starting from RouterOS v7.1beta4, it is implemented as a JSON wrapper interface of the console API
+
+But I strongly recommend you to use latest version ( as of now it's 7.8 ) or minimum 7.7 - anything bellow this is full with major bugs. 
+
 # how to enable REST api in Mikrotik
 Just a quick example how to enable fast your REST API With Self Signed Certificate
 Change 10.2.4.75 with your router IP
