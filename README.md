@@ -24,9 +24,11 @@ Execute these rows 1 by 1 in your mikrotik terminal
 I am using default port 443, but you can change that in your IP->Services if needed. 
 
 /certificate/add name=local-root-cert common-name=local-cert key-usage=key-cert-sign,crl-sign days-valid=8000
+
 /certificate/sign local-root-cert 
 
 /certificate/add name=webfig days-valid=8000 common-name=10.2.4.75
+
 /certificate/sign webfig 
 
 /ip service/set www-ssl certificate=webfig disabled=no 
